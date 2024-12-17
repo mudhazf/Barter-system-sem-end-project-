@@ -784,7 +784,7 @@ function typeWriter() {
 window.onload = typeWriter;
 // Example: Handling Form Submission for Profile Info (or any section)
 document.querySelector('#profile form').addEventListener('submit', function (event) {
-    event.preventDefault();  // Prevent the form from reloading the page
+    event.preventDefault(); 
     alert('Profile Info Saved!');
 });
 
@@ -799,11 +799,9 @@ document.querySelector('#skills form').addEventListener('submit', function (even
 });
 function acceptRequest() {
     alert('Trade request accepted!');
-    // Optionally, you can add AJAX functionality to save the acceptance to the server
 }
 
 function declineRequest() {
     alert('Trade request declined!');
-    // Optionally, you can add AJAX functionality to save the decline to the server
 }
 
