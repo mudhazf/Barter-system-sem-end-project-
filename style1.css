@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('homepage.jpg.jpg');
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps background fixed during scroll */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 5%;
+}
+
+.hero-content h1 {
+    font-family: 'Inria Serif', serif;
+    font-size: 3rem;
+    color: white;
+    line-height: 2;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.h2{
+    font-family: sans-serif;
+}
+
+/* Trade Button */
+.trade-button {
+    display:inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4B5C4C;
+    color: #fff;
+    border:none;
+    border-radius: 45px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position:relative;
+    top: 10px;
+}
+.trade-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* TRADE button click effect */
+.trade-button:active {
+    background-color: #003f7f;
+    transform: translateY(2px); /* Slight press effect when clicked */
+}
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    border-color: #4B5C4C ;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.trade-button:hover {
+    background-color:#4B5C4C; 
+    transform: scale(1.6); /* Slight zoom effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        top: 10px;
+        right: 10px;
+    }
+}
+.contact-us {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contact-us h2 {
+    font-size: 2rem;
+}
+
+.contact-us a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}

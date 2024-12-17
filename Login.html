@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="empower-text">
+        <h1 id="typewriter"></h1>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Right Form -->
+        <div class="form-container">
+            <!-- Tabs for Login/Signup -->
+            <div class="form-tabs">
+                <button class="tab-button active" id="login-tab" onclick="switchForm('login')">Login</button>
+                <button class="tab-button" id="signup-tab" onclick="switchForm('signup')">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form" id="login-form" style="display: block;">
+                <h2>Login</h2>
+                <form action="/submit-login" method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form" id="signup-form" style="display: none;">
+                <h2>Sign Up</h2>
+                <form action="/submit-signup" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
